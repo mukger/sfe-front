@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+.try-again-button, .close-button {
+    font-style: inherit;
+    background:transparent;
+    transition:all .5s ease;
+    color:#41403E;
+    letter-spacing:1px;
+    outline:none;
+    font-family: 'Indie Flower';
+    font-weight: bold;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: none;
+    width: 100px;
+    background: 
+        linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
+        linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
+        linear-gradient(0deg, #333 50%, transparent 0) repeat-y,
+        linear-gradient(0deg, #333 50%, transparent 0) repeat-y;
+    background-size: 12px 1.5px, 12px 1.5px, 1.5px 12px, 1.5px 12px;
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+}
+.try-again-button:hover {
+    animation: tryAgainGradientMove .3s infinite linear;
+    background-color: #c3d4c3;
+}
+.close-button:hover {
+    animation:closeGradientMove .3s infinite linear;
+    background-color: #e2919b;
+}
+.button-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+@keyframes tryAgainGradientMove {
+    100% {
+        background-position: 12px 0, -12px 100%, 0 -12px, 100% 12px;
+    }
+}
+@keyframes closeGradientMove {
+    100% {
+        background-position: -12px 0, 12px 100%, 0 12px, 100% -12px;
+    }
+}

@@ -1,0 +1,61 @@
+.menu-item, .menu-item-current {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    transition: box-shadow 0.3s ease; /* Добавляем плавный переход для анимации тени */
+    border: black solid 2px;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 6.5px;
+}
+.menu-item:hover, .menu-item-current {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень при наведении */
+}
+.menu-item > img, .menu-item-current > img {
+    height: 25px;
+    width: 25px;
+}
+.home-item {
+    top: 35px;
+}
+.history-item {
+    top: 85px;
+}
+.reference-information-item {
+    top: 135px;
+}
+.user-manual-item {
+    top: 185px;
+}
+.export-item {
+    top: 235px;
+}
+.import-item {
+    top: 235px;
+}
+.menu-item-current {
+    border: black solid 3px;
+    background-color: #c3d4c3;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 'auto';
+    bottom: 'auto';
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    font-family: 'Indie Flower';
+    margin-right: -50%;
+    border-radius: 10%;
+    border: 1px solid black;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,18 @@
+.refinfo-text {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.centralized-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.centralized-container > img {
+    width: 75px;
+    height: 75px;
+}
+.foot-container {
+    margin-top: 10px
+}

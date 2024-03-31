@@ -1,0 +1,13 @@
+.centralized-homepage-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.centralized-homepage-container > img {
+    width: 50px;
+    height: 50px;
+}
+.export-tip-text {
+    margin: 0;
+    padding: 0;
+}

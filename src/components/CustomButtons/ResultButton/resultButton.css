@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+.result-button{
+    font-style: inherit;
+    position: absolute;
+    background:transparent;
+    transition:all .5s ease;
+    color:#41403E;
+    letter-spacing:1px;
+    outline:none;
+    font-family: 'Indie Flower';
+    font-weight: bold;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: none;
+    width: 100px;
+    top: 520px;
+    left: 280px;
+    background: 
+        linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
+        linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
+        linear-gradient(0deg, #333 50%, transparent 0) repeat-y,
+        linear-gradient(0deg, #333 50%, transparent 0) repeat-y;
+    background-size: 12px 1.5px, 12px 1.5px, 1.5px 12px, 1.5px 12px;
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    
+}
+button:hover {
+    background-color: #c3d4c3;
+    animation: linearGradientMove .3s infinite linear;
+}
+.buttonWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    margin-top: 10px;
+}
+@keyframes linearGradientMove {
+    100% {
+        background-position: 12px 0, -12px 100%, 0 -12px, 100% 12px;
+    }
+}
